@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="ins.title">Insights · Horus Asset Management</title>
+<meta name="description" content="Monthly factsheets, market outlook and research notes from Horus Asset Management.">
+<meta name="theme-color" content="#0a1a30">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="insights">
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow reveal" data-i18n="ins.eyebrow">Insights</span>
+    <h1 class="reveal d1" data-i18n="ins.h1">Factsheets, outlook <em>and research.</em></h1>
+    <p class="lead reveal d2" data-i18n="ins.lead">What we hold, what we see in markets, and what we tested along the way.</p>
+  </div>
+</header>
+
+<section id="factsheets">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal" data-i18n="fsl.eyebrow">Monthly factsheet</span>
+      <h2 class="section-title reveal d1" data-i18n="fsl.title">The strategy, <em>on two pages.</em></h2>
+      <p class="lead reveal d2" data-i18n="fsl.lead">Performance, risk statistics, calendar returns, holdings and factor exposures. Available in English and French.</p>
+    </div>
+    <div class="fs-grid">
+      <div class="reveal" data-factsheet-latest></div>
+      <div class="reveal d1">
+        <h3 class="fs-arch-title" data-i18n="fsl.archive">Archive</h3>
+        <ul class="fs-archive" data-factsheet-archive></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="outlook" class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal" data-i18n="out.eyebrow">Market outlook · October 2026</span>
+      <h2 class="section-title reveal d1" data-i18n="out.title">Rates are back at their <em>2007 levels.</em></h2>
+      <p class="lead reveal d2" data-i18n="out.lead">Central banks are tightening again and global government yields are near 4%: bonds pay again, while equities near their records are priced for good news.</p>
+    </div>
+    <div class="macro">
+      <div class="macro-card reveal"><div class="lbl" data-i18n="out.1.l">FED FUNDS, UPPER BOUND</div><div class="v">4.00%</div><p data-i18n="out.1.p">After the hike of 16 September, the first in more than three years.</p></div>
+      <div class="macro-card reveal d1"><div class="lbl" data-i18n="out.2.l">US 10-YEAR YIELD</div><div class="v">5.29%</div><p data-i18n="out.2.p">End of September, the highest since 2007, then back below 5%.</p></div>
+      <div class="macro-card reveal d2"><div class="lbl" data-i18n="out.3.l">US CPI INFLATION</div><div class="v">3.4%</div><p data-i18n="out.3.p">Still well above target; ECB deposit rate at 2.50%.</p></div>
+      <div class="macro-card reveal d3"><div class="lbl" data-i18n="out.4.l">BRENT OIL</div><div class="v">$105</div><p data-i18n="out.4.p">Expected to ease towards $80 by early 2027.</p></div>
+    </div>
+    <div class="views">
+      <div class="view light reveal"><h3 data-i18n="out.v1">Market consensus</h3><ul><li data-i18n="out.v1.1">Mildly risk-on: earnings and AI hold up</li><li data-i18n="out.v1.2">S&amp;P 500 record of 7,799 on 13 August</li><li data-i18n="out.v1.3">Be selective; cautious on US mega caps</li><li data-i18n="out.v1.4">Bond volatility up, equity volatility still calm</li><li data-i18n="out.v1.5">Investment-grade credit preferred</li></ul></div>
+      <div class="view darkc reveal d1"><h3 data-i18n="out.v2">Our reading for a 60/40</h3><ul><li data-i18n="out.v2.1">Keep 40% in bonds: they pay 4–5% again</li><li data-i18n="out.v2.2">Do not own the index blindly</li><li data-i18n="out.v2.3">Tilt to small cap, growth and momentum</li><li data-i18n="out.v2.4">A rule, not a forecast, picks the funds</li></ul></div>
+    </div>
+    <p class="small reveal" style="margin-top:20px" data-i18n="out.src">Sources: Amundi Investment Institute, Global Investment Views, October 2026; First Trust, A recap of September 2026; Federal Reserve.</p>
+  </div>
+</section>
+
+<section id="research">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal" data-i18n="res.eyebrow">Research notes</span>
+      <h2 class="section-title reveal d1" data-i18n="res.title">What we tested, <em>and what we learned.</em></h2>
+    </div>
+    <div class="insights two-col">
+      <article class="insight reveal">
+        <span class="meta" data-i18n="res.1.m">RESEARCH NOTE · TIMING</span>
+        <h3 data-i18n="res.1.t">Why we kept the 60/40 permanent</h3>
+        <p data-i18n="res.1.p">We tested a monthly trend rule that cuts equities to 30% when the 60/40 trails cash.</p>
+        <div class="full"><p data-i18n="res.1.f">It reduced the worst loss from −22.6% to −16.3%, but lowered the return from 9.0% to 8.4%, the information ratio from 0.54 to 0.33, and the Sharpe ratio of the last ten years from 0.70 to 0.65. It missed the rebounds of 2009, 2019 and 2020. We keep it as an option for more cautious mandates.</p></div>
+        <div class="more"><button class="read" data-i18n="js.read">Read more</button></div>
+      </article>
+      <article class="insight reveal d1">
+        <span class="meta" data-i18n="res.2.m">RESEARCH NOTE · FACTORS</span>
+        <h3 data-i18n="res.2.t">Three factors beat each one alone</h3>
+        <p data-i18n="res.2.p">Each factor works on its own, but each one alone suffers falls of 26 to 29%.</p>
+        <div class="full"><p data-i18n="res.2.f">Small cap alone: Sharpe 0.52, worst loss −26.1%. Growth alone: 0.71 and −29.2%. Momentum alone: 0.58 and −29.5%. Together they point to different funds in different years, and the worst loss shrinks to −22.6% with a Sharpe ratio of 0.69.</p></div>
+        <div class="more"><button class="read" data-i18n="js.read">Read more</button></div>
+      </article>
+      <article class="insight reveal">
+        <span class="meta" data-i18n="res.3.m">RESEARCH NOTE · CALENDAR</span>
+        <h3 data-i18n="res.3.t">January or October?</h3>
+        <p data-i18n="res.3.p">We tested rebalancing every October instead of every January, on the same 227 months.</p>
+        <div class="full"><p data-i18n="res.3.f">January: 8.5% a year, Sharpe 0.65, worst loss −22.6%. October: 7.6%, 0.57 and −31.4%. The idea still works in October, so it does not hang on one date, but January does better and uses the full calendar year of data.</p></div>
+        <div class="more"><button class="read" data-i18n="js.read">Read more</button></div>
+      </article>
+      <article class="insight reveal d1">
+        <span class="meta" data-i18n="res.4.m">RESEARCH NOTE · RISK</span>
+        <h3 data-i18n="res.4.t">Is our momentum really momentum?</h3>
+        <p data-i18n="res.4.p">We regressed our own returns on the four Carhart factors to check what we really hold.</p>
+        <div class="full"><p data-i18n="res.4.f">Small cap loading +0.19 (t = 6.0) and momentum +0.06 (t = 2.9) are significant, while the 60/40 benchmark is negative on both. Growth has the right sign but is not significant (t = −1.6). With robust Newey-West errors, the conclusions hold. The alpha left after the factors is not significant: our return comes from the exposures we announce.</p></div>
+        <div class="more"><button class="read" data-i18n="js.read">Read more</button></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="newsletter">
+  <div class="container news-band">
+    <div>
+      <span class="eyebrow reveal" data-i18n="nl.eyebrow">Newsletter</span>
+      <h2 class="section-title reveal d1" data-i18n="nl.title">One letter a month. <em>No noise.</em></h2>
+      <p class="lead reveal d2" data-i18n="nl.lead">The new factsheet, one research note and our reading of the markets, in your inbox at the start of each month.</p>
+    </div>
+    <form class="news-big reveal d2" data-newsletter>
+      <div class="news-row"><input type="email" name="email" required placeholder="Your email" data-i18n-ph="news.ph" aria-label="Email"><button class="btn solid" type="submit" data-i18n="news.btn">Subscribe</button></div>
+      <p class="news-msg small" aria-live="polite"></p>
+      <p class="small" data-i18n="nl.privacy">We only use your email to send the letter. Unsubscribe in one click.</p>
+    </form>
+  </div>
+</section>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/factsheets.js"></script>
+<script src="assets/js/team-data.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

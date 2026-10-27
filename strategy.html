@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="strat.title">Strategy · Horus Asset Management</title>
+<meta name="description" content="Horus Smart Beta 60/40: strategic factors (small cap, growth, momentum) and a tactical selection of ETFs every January, inside a permanent 60/40.">
+<meta name="theme-color" content="#0a1a30">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="strategy">
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow reveal" data-i18n="strat.eyebrow">Flagship strategy</span>
+    <h1 class="reveal d1" data-i18n="strat.h1">Horus Smart Beta 60/40: <em>a 60/40 that owns the right kind of equities.</em></h1>
+    <p class="lead reveal d2" data-i18n="strat.lead">Same 60/40. Smarter equities and bonds inside. Strategic factors that never change, a tactical fund selection every January.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="strategy-grid">
+      <div>
+        <span class="eyebrow reveal" data-i18n="strat.s1.eyebrow">The idea</span>
+        <h2 class="section-title reveal d1" data-i18n="strat.s1.title">Keep the risk budget, <em>change what fills it.</em></h2>
+        <p class="lead reveal d2" data-i18n="strat.s1.p1">A market index owns every stock in proportion to its size. Decades of research show that some kinds of stocks have paid more than others. We build the equity half around three of them.</p>
+        <p class="reveal d3" style="margin-top:20px" data-i18n="strat.s1.p2">The equity half holds two ETFs at 30% each, chosen every January for their exposure to our three factors. The bond half holds two ETFs at 20% each, chosen for their three-year Sharpe ratio. Four funds, one rule, once a year.</p>
+      </div>
+      <aside class="factsheet reveal d2">
+        <h3 data-i18n="fs.h">Strategy at a glance</h3>
+        <div class="sub" data-i18n="fs.sub">Model portfolio · key facts</div>
+        <dl>
+          <dt data-i18n="fs.obj">Objective</dt><dd data-i18n="fs.obj.v">Beat a 60/40 with similar risk</dd>
+          <dt data-i18n="fs.bench">Benchmark</dt><dd>60% MSCI World · 40% Bloomberg Global Agg.</dd>
+          <dt data-i18n="fs.univ">Universe</dt><dd data-i18n="fs.univ.v">12 equity ETFs · 7 bond ETFs · gold</dd>
+          <dt data-i18n="fs.split">Equity / bonds</dt><dd data-i18n="fs.split.v">60% / 40%, permanent</dd>
+          <dt data-i18n="fs.hold">Holdings</dt><dd data-i18n="fs.hold.v">4 ETFs (2 equity, 2 bond)</dd>
+          <dt data-i18n="fs.lim">Position limits</dt><dd data-i18n="fs.lim.v">≤ 30% equity · ≤ 20% bond</dd>
+          <dt data-i18n="fs.reb">Rebalancing</dt><dd data-i18n="fs.reb.v">Once a year, early January</dd>
+          <dt data-i18n="fs.sig">Signals</dt><dd data-i18n="fs.sig.v">Carhart 4-factor · 3-year Sharpe</dd>
+          <dt data-i18n="fs.ccy">Base currency</dt><dd>USD</dd>
+          <dt data-i18n="fs.track">Track record</dt><dd data-i18n="fs.track.v">Backtest, Jan 2007 – Aug 2026</dd>
+        </dl>
+      </aside>
+    </div>
+    <div class="factors">
+      <div class="factor reveal"><span class="tag">SIZE · SMB</span><h3 data-i18n="fac.1.t">Small cap</h3><p data-i18n="fac.1.p">Smaller companies have earned more than large ones over the long run: the size premium.</p><p class="ref">Fama and French (1993)</p><span class="big">S</span></div>
+      <div class="factor reveal d1"><span class="tag">GROWTH · −HML</span><h3 data-i18n="fac.2.t">Growth</h3><p data-i18n="fac.2.p">Fast-growing firms, in technology and health care, have led the market since 2009.</p><p class="ref" data-i18n="fac.2.r">Negative loading on the value factor HML</p><span class="big">G</span></div>
+      <div class="factor reveal d2"><span class="tag">MOMENTUM · MOM</span><h3 data-i18n="fac.3.t">Momentum</h3><p data-i18n="fac.3.p">Last year's winners tend to keep winning for some months.</p><p class="ref">Jegadeesh &amp; Titman (1993); Carhart (1997)</p><span class="big">M</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal" data-i18n="proc.eyebrow">Investment process</span>
+      <h2 class="section-title reveal d1" data-i18n="proc.title">Every January, <em>four steps.</em></h2>
+      <p class="lead reveal d2" data-i18n="proc.lead">The factors stay the same; the funds that carry them change. The whole process fits in a spreadsheet, and every number can be recomputed.</p>
+    </div>
+    <div class="steps" id="steps">
+      <div class="progress"></div>
+      <div class="step reveal"><div class="dot">I</div><h3 data-i18n="proc.1.t">Measure</h3><p data-i18n="proc.1.p">One Carhart regression per equity ETF on the last 36 months: how much SMB, HML and MOM it holds today.</p></div>
+      <div class="step reveal d1"><div class="dot">II</div><h3 data-i18n="proc.2.t">Score</h3><p data-i18n="proc.2.p">z(SMB) + z(−HML) + z(MOM): one point per standard deviation above the average ETF. The three count equally.</p></div>
+      <div class="step reveal d2"><div class="dot">III</div><h3 data-i18n="proc.3.t">Select</h3><p data-i18n="proc.3.p">The Solver buys the two best-scored equity ETFs and the two bond ETFs with the best 3-year Sharpe ratio.</p></div>
+      <div class="step reveal d3"><div class="dot">IV</div><h3 data-i18n="proc.4.t">Hold</h3><p data-i18n="proc.4.p">We keep the four funds for twelve months, then start again. Low turnover, low cost.</p></div>
+    </div>
+    <div class="constraints reveal">
+      <span class="chip" data-i18n="chip.1">Equity <b>60%</b>, each ETF ≤ <b>30%</b></span>
+      <span class="chip" data-i18n="chip.2">Bonds <b>40%</b>, each ETF ≤ <b>20%</b></span>
+      <span class="chip" data-i18n="chip.3">Long only, weights ≥ <b>0</b></span>
+      <span class="chip" data-i18n="chip.4">Gold <b>0%</b></span>
+    </div>
+    <div class="zscore">
+      <div class="reveal">
+        <h3 style="font-size:32px;margin-bottom:6px" data-i18n="z.title">Example: how the rule chose for 2026</h3>
+        <p class="small" style="margin-bottom:18px" data-i18n="z.sub">Equity score, top 3 of 12 ETFs, estimated on 2023–2025 data. Highlighted funds are bought at 30% each.</p>
+        <div class="table-wrap"><table class="table">
+          <thead><tr><th>ETF</th><th data-i18n="z.c1">z small cap</th><th data-i18n="z.c2">z growth</th><th data-i18n="z.c3">z momentum</th><th data-i18n="z.c4">Score</th></tr></thead>
+          <tbody>
+            <tr class="hl"><td data-i18n="z.r1">IWM · US small caps</td><td>2.35</td><td>0.52</td><td>1.05</td><td>3.92</td></tr>
+            <tr class="hl"><td data-i18n="z.r2">XLK · US technology</td><td>−0.33</td><td>2.28</td><td>0.09</td><td>2.04</td></tr>
+            <tr class="dim"><td data-i18n="z.r3">IJH · US mid caps</td><td>1.19</td><td>0.22</td><td>0.61</td><td>2.02</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="note-card reveal d2">
+        <h4 data-i18n="z.b.title">Bond half: best 3-year Sharpe</h4>
+        <div class="row"><span data-i18n="z.b1">LQD · US IG corporates</span><b>0.046</b></div>
+        <div class="row"><span data-i18n="z.b2">RXRGEX · German govts</span><b>0.026</b></div>
+        <p class="small" style="margin-top:14px" data-i18n="z.b.note">Monthly Sharpe ratios. Each fund bought at 20%.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow reveal" data-i18n="risk.eyebrow">Risks</span>
+      <h2 class="section-title reveal d1" data-i18n="risk.title">When our strategy <em>lags.</em></h2>
+      <p class="lead reveal d2" data-i18n="risk.lead">No strategy wins every year. These are the situations our clients should expect.</p>
+    </div>
+    <div class="risks">
+      <div class="risk reveal"><span class="n">I.</span><h3 data-i18n="risk.1.t">Mega-cap years</h3><p data-i18n="risk.1.p">When a few giants lead, small caps lag: in 2023–2025 we made +8.6, +5.0 and +11.5% against +16.3, +10.2 and +15.9%.</p></div>
+      <div class="risk reveal d1"><span class="n">II.</span><h3 data-i18n="risk.2.t">Momentum turns</h3><p data-i18n="risk.2.p">Momentum can reverse sharply, as in 2009. That is why it is one factor out of three, not the whole strategy.</p></div>
+      <div class="risk reveal d2"><span class="n">III.</span><h3 data-i18n="risk.3.t">Not a shelter</h3><p data-i18n="risk.3.p">The 60/40 is permanent: in 2008 and 2022 our equity half fell with the market. We cut losses; we do not avoid them.</p></div>
+    </div>
+    <div class="reveal" style="margin-top:56px"><a class="btn" href="performance.html" data-i18n="strat.next">See the results →</a></div>
+  </div>
+</section>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/factsheets.js"></script>
+<script src="assets/js/team-data.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

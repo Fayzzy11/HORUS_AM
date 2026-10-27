@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="con.title">Contact · Horus Asset Management</title>
+<meta name="description" content="Contact the Horus Asset Management team.">
+<meta name="theme-color" content="#0a1a30">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow reveal" data-i18n="con.eyebrow">Contact</span>
+    <h1 class="reveal d1" data-i18n="con.h1">Let's talk about <em>your 60/40.</em></h1>
+    <p class="lead reveal d2" data-i18n="con.lead">Questions about our research, the backtest, the team or an application? Write to us.</p>
+  </div>
+</header>
+
+<section class="dark">
+  <div class="container">
+    <div class="contact">
+      <div class="contact-info">
+        <div class="line"><span data-i18n="con.city">City</span>Paris, France</div>
+        <div class="line"><span data-i18n="con.school">School</span>SKEMA Business School · MSc FMI</div>
+        <div class="line"><span>Email</span><a href="#" data-email data-i18n="con.soon">Address coming soon</a></div>
+        <div class="line"><span data-i18n="con.web">Website</span>fayzzy11.github.io/HORUS_AM</div>
+      </div>
+      <form class="form" id="contactForm">
+        <label><span data-i18n="con.name">Name</span><input name="name" required autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        <label><span data-i18n="con.subject">Subject</span><select name="subject">
+          <option value="strategy" data-i18n="con.o1">Our strategy</option>
+          <option value="backtest" data-i18n="con.o2">The backtest</option>
+          <option value="careers" data-i18n="con.o3">Joining the team</option>
+          <option value="other" data-i18n="con.o4">Other</option>
+        </select></label>
+        <label><span data-i18n="con.msg">Message</span><textarea name="message" required></textarea></label>
+        <button class="btn solid" type="submit" style="justify-self:start" data-i18n="con.send">Send message</button>
+        <p class="small form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/factsheets.js"></script>
+<script src="assets/js/team-data.js"></script>
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
