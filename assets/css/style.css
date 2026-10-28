@@ -564,3 +564,11 @@ footer { background: #06111f; color: var(--on-dark-muted); padding: 72px 0 40px;
 .sim > *, .fs-grid > *, .news-band > *, .cta-band > * { min-width: 0; }
 .sim-form input, .sim-form select { width: 100%; min-width: 0; }
 @media (max-width: 560px) { .brand-text span { letter-spacing: .18em; white-space: nowrap; font-size: 9px; } .brand-text strong { font-size: 22px; } }
+
+/* Team cards with full names and photos */
+.member { display: flex; flex-direction: column; align-items: center; padding: 32px 16px 28px; }
+.member h3 { font-size: 24px; line-height: 1.15; min-height: 2.3em; display: flex; align-items: center; justify-content: center; }
+.member .mrole { font-size: 11px; letter-spacing: .12em; min-height: 2.6em; }
+.member p { flex: 1; margin-top: 6px; }
+.member .li { margin-top: 18px; }
+@media (max-width: 760px) { .member h3, .member .mrole { min-height: 0; } }
